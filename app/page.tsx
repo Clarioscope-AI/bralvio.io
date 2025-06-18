@@ -14,7 +14,7 @@ export default function Home() {
         <PrimaryButton
           label="Book a Demo"
           arrow={true}
-          classNames=" bg-tertiary text-secondary border-2 border-purple-800 hover:bg-purple-700"
+          classNames=" bg-tertiary text-secondary border-2 border-purple-800 hover:bg-purple-600"
         />
       </div>
     </div>
