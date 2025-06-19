@@ -1,20 +1,16 @@
-import React, { JSX } from "react";
+import { JSX } from "react";
 import { heroData } from "@/data/heroData";
-import Button from "../ui/button/Button";
+import Button from "@/components/ui/button/Button";
 
 const Hero: React.FC = (): JSX.Element => {
-  const heroTitle = heroData.title;
-  const keyword = "Government AI";
-
-  const [before, after] = heroTitle.split(keyword);
   return (
     <section className="flex flex-col items-center justify-center text-center p-8 h-[300x] lg:h-[550px] border-2">
       <h1 className="lg:w-1/2 mx-auto text-3xl md:text-4xl lg:text-7xl">
-        {before}
-        <span className="text-blue-600">{keyword}</span>
-        {after}
+        {heroData?.title || ""}
       </h1>
-      <p className="w-2/3 lg:w-1/2 mx-auto my-6">{heroData.description}</p>
+      <p className="w-2/3 lg:w-1/2 mx-auto my-6">
+        {heroData?.description || ""}
+      </p>
       <div className="flex gap-2">
         <Button
           label="Book a Demo"
