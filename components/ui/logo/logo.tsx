@@ -6,7 +6,7 @@ const Logo: React.FC<LogoProps> = ({ size = 40 }) => {
     <div className="flex items-center">
       <div className="relative" style={{ width: size, height: size }}>
         <Image
-          src=""
+          src="/"
           alt="Logo"
           fill
           className="object-contain"
