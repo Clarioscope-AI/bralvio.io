@@ -1,12 +1,14 @@
 "use client";
-import { useLayoutEffect, useState } from "react";
-import MobileHeader from "./MobileHeader";
-import DesktopHeader from "./DesktopHeader";
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+const MobileHeader = dynamic(() => import("./MobileHeader"), { ssr: false });
+const DesktopHeader = dynamic(() => import("./DesktopHeader"), { ssr: false });
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -14,6 +16,7 @@ const Header = () => {
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
+
   return isMobile ? <MobileHeader /> : <DesktopHeader />;
 };
 

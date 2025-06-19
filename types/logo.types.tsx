@@ -1,3 +1,3 @@
-export type LogoProps = {
+export interface LogoProps {
   size?: number;
-};
+}
