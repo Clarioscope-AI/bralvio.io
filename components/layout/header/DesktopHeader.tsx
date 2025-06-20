@@ -7,7 +7,7 @@ import { HeaderMenu } from "@/types/DesktopHeader.types";
 
 const DesktopHeader: FC = () => {
   return (
-    <header className="relative hidden md:block bg-[#020202] text-white/95 shadow-md">
+    <header className="relative hidden md:block bg-primary text-secondary">
       <div className="flex items-center justify-between p-4">
         <Logo />
         <nav className="flex flex-1 justify-center space-x-6">

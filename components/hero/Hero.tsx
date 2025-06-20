@@ -20,7 +20,7 @@ const Hero: React.FC = (): JSX.Element => {
         <Button
           label="Build AI"
           arrow
-          classNames="text-secondary rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 text-center md:text-start"
+          classNames="text-secondary flex justify-center rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 text-center md:text-start"
         ></Button>
       </div>
     </section>

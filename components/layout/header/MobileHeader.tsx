@@ -10,7 +10,7 @@ const MobileHeader = () => {
   return (
     <Disclosure
       as="header"
-      className="md:hidden shadow-md bg-black text-white z-50"
+      className="md:hidden shadow-md bg-primary text-secondary z-50"
     >
       {({ open }) => (
         <>
