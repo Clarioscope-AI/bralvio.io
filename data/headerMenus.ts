@@ -1,4 +1,6 @@
-export const headerMenus = [
+import { HeaderMenu } from "@/types/HeaderMenu.types";
+
+export const headerMenus: HeaderMenu[] = [
   { label: "Products", destination: "/" },
   { label: "Leaderboards", destination: "/Leaderboards" },
   { label: "Enterprise", destination: "/Enterprise" },

@@ -10,14 +10,16 @@ const MobileHeader = () => {
   return (
     <Disclosure
       as="header"
-      className="md:hidden p-4 shadow-md bg-black text-white z-50"
+      className="md:hidden shadow-md bg-black text-white z-50"
     >
       {({ open }) => (
         <>
-          <div className="flex justify-between items-center">
-            <Logo size={36} />
+          <div className="p-4 flex justify-between items-center relative">
+            <div className={open ? "opacity-0" : "opacity-100"}>
+              <Logo size={36} />
+            </div>
             <Disclosure.Button
-              className="text-2xl transition-all duration-200 hover:text-primary"
+              className="text-2xl transition-all duration-200 hover:text-secondary/85 z-50"
               aria-label="Toggle Menu"
             >
               {open ? <FiX /> : <FiMenu />}
@@ -25,30 +27,40 @@ const MobileHeader = () => {
           </div>
 
           <Disclosure.Panel
-            className={`overflow-hidden transition-all duration-300 ease-in-out ${
-              open ? "max-h-[500px] opacity-100 mt-3" : "max-h-0 opacity-0"
+            className={`fixed inset-0 top-[64px] z-40 bg-black transition-all duration-300 ease-in-out flex flex-col ${
+              open
+                ? "h-[calc(100vh-64px)] opacity-100 translate-y-0"
+                : "h-0 opacity-0 -translate-y-4"
             }`}
           >
-            <nav className="flex flex-col items-center gap-3 bg-black">
+            <div className="flex flex-col gap-4 px-4 pt-6 overflow-y-auto">
               {headerMenus.map((menu) => (
                 <Link
                   key={menu.label}
                   href={menu.destination}
-                  className="text-sm font-medium text-white hover:text-primary hover:underline transition duration-200"
+                  className="text-sm font-medium text-white hover:text-primary/85 transition duration-200 p-3 hover:bg-gray-200 rounded-md"
                 >
                   {menu.label}
                 </Link>
               ))}
+            </div>
 
-              <div className="flex gap-4 mt-4">
-                 <Button
-          label="Book a Demo"
-          arrow
-          classNames="text-primary bg-secondary  rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300"
-        ></Button>
-        <Button label="Log In" arrow  classNames="text-secondary rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300"></Button>
+            <div className="mt-auto px-4 py-4 bg-[#262626] flex gap-4">
+              <div className="w-1/2">
+                <Button
+                  label="Book a Demo"
+                  arrow
+                  classNames="text-primary bg-secondary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300 w-full"
+                />
               </div>
-            </nav>
+              <div className="w-1/2">
+                <Button
+                  label="Log In"
+                  arrow={false}
+                  classNames="text-secondary rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 w-full"
+                />
+              </div>
+            </div>
           </Disclosure.Panel>
         </>
       )}
