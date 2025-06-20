@@ -49,15 +49,13 @@ const MobileHeader = () => {
               <div className="w-1/2">
                 <Button
                   label="Book a Demo"
-                  arrow
-                  classNames="text-primary bg-secondary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300 w-full"
+                  classNames="text-primary bg-secondary rounded-lg px-4 py-2  transition-colors duration-300 w-full"
                 />
               </div>
               <div className="w-1/2">
                 <Button
                   label="Log In"
-                  arrow={false}
-                  classNames="text-secondary rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 w-full"
+                  classNames="text-primary bg-secondary rounded-lg px-4 py-2 transition-colors duration-300 w-full"
                 />
               </div>
             </div>
