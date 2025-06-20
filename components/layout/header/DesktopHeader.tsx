@@ -7,8 +7,8 @@ import { HeaderMenu } from "@/types/DesktopHeader.types";
 
 const DesktopHeader: FC = () => {
   return (
-    <header className="hidden md:block bg-[#020202] text-white/95 shadow-md">
-      <div className=" flex items-center justify-between p-4">
+    <header className="relative hidden md:block bg-[#020202] text-white/95 shadow-md">
+      <div className="flex items-center justify-between p-4">
         <Logo />
         <nav className="flex flex-1 justify-center space-x-6">
           {headerMenus.map((menu: HeaderMenu) => (
@@ -34,6 +34,15 @@ const DesktopHeader: FC = () => {
           />
         </div>
       </div>
+
+      {/* Gradient Bottom Border */}
+      <hr
+        style={{
+          backgroundImage:
+            "linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, #FFF 52.07%, rgba(255, 255, 255, 0.00) 100%)",
+        }}
+        className="absolute bottom-0 w-full h-px -translate-x-1/2 border-0 opacity-10 left-1/2"
+      />
     </header>
   );
 };
