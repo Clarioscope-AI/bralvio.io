@@ -11,16 +11,16 @@ const Hero: React.FC = (): JSX.Element => {
       <p className="text-[12px] lg:text-[16px] w-full md:w-2/3 lg:w-1/2 mx-auto my-6">
         {heroData?.description || ""}
       </p>
-      <div className="flex gap-3">
+      <div className="flex flex-col md:flex-row gap-3">
         <Button
           label="Book a Demo"
           arrow
-          classNames="border-2 rounded-xl mt-4 p-1 lg:p-3 bg-secondary text-primary"
+          classNames="text-primary bg-secondary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300"
         ></Button>
         <Button
           label="Build AI"
           arrow
-          classNames="border-2 rounded-xl mt-4 p-1 lg:p-3 border-none"
+          classNames="text-secondary rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 text-center md:text-start"
         ></Button>
       </div>
     </section>
