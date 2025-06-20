@@ -1,0 +1,69 @@
+"use client";
+import { Disclosure } from "@headlessui/react";
+import Link from "next/link";
+import { headerMenus } from "@/data/headerMenus";
+import Logo from "@/components/ui/logo/logo";
+import { FiMenu, FiX } from "react-icons/fi";
+import Button from "@/components/ui/button/Button";
+
+const MobileHeader = () => {
+  return (
+    <Disclosure
+      as="header"
+      className="md:hidden shadow-md bg-black text-white z-50"
+    >
+      {({ open }) => (
+        <>
+          <div className="p-4 flex justify-between items-center relative">
+            <div className={open ? "opacity-0" : "opacity-100"}>
+              <Logo size={36} />
+            </div>
+            <Disclosure.Button
+              className="text-2xl transition-all duration-200 hover:text-secondary/85 z-50"
+              aria-label="Toggle Menu"
+            >
+              {open ? <FiX /> : <FiMenu />}
+            </Disclosure.Button>
+          </div>
+
+          <Disclosure.Panel
+            className={`fixed inset-0 top-[64px] z-40 bg-black transition-all duration-300 ease-in-out flex flex-col ${
+              open
+                ? "h-[calc(100vh-64px)] opacity-100 translate-y-0"
+                : "h-0 opacity-0 -translate-y-4"
+            }`}
+          >
+            <div className="flex flex-col gap-4 px-4 pt-6 overflow-y-auto">
+              {headerMenus.map((menu) => (
+                <Link
+                  key={menu.label}
+                  href={menu.destination}
+                  className="text-sm font-medium text-white hover:text-primary/85 transition duration-200 p-3 hover:bg-gray-200 rounded-md"
+                >
+                  {menu.label}
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-auto px-4 py-4 bg-[#262626] flex gap-4">
+              <div className="w-1/2">
+                <Button
+                  label="Book a Demo"
+                  classNames="text-primary bg-secondary rounded-lg px-4 py-2  transition-colors duration-300 w-full"
+                />
+              </div>
+              <div className="w-1/2">
+                <Button
+                  label="Log In"
+                  classNames="text-primary bg-secondary rounded-lg px-4 py-2 transition-colors duration-300 w-full"
+                />
+              </div>
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
+  );
+};
+
+export default MobileHeader;
