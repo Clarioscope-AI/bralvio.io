@@ -4,23 +4,23 @@ import Button from "@/components/ui/button/Button";
 
 const Hero: React.FC = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center justify-center text-center p-8 h-[300x] lg:h-[550px] border-2">
-      <h1 className="lg:w-1/2 mx-auto text-3xl md:text-4xl lg:text-7xl">
+    <section className="flex flex-col items-center justify-center text-center p-8 h-[300x] lg:h-[550px] bg-primary text-secondary">
+      <h1 className="lg:w-1/2 mx-auto text-3xl md:text-3xl lg:text-[62px]">
         {heroData?.title || ""}
       </h1>
-      <p className="w-2/3 lg:w-1/2 mx-auto my-6">
+      <p className="text-[12px] lg:text-[16px] w-full md:w-2/3 lg:w-1/2 mx-auto my-6">
         {heroData?.description || ""}
       </p>
-      <div className="flex gap-2">
+      <div className="flex gap-3">
         <Button
           label="Book a Demo"
           arrow
-          classNames="border-2 rounded-lg mt-4 p-2 lg:p-3"
+          classNames="border-2 rounded-xl mt-4 p-1 lg:p-3 bg-secondary text-primary"
         ></Button>
         <Button
           label="Build AI"
           arrow
-          classNames="border-2 rounded-lg mt-4 p-2 lg:p-3"
+          classNames="border-2 rounded-xl mt-4 p-1 lg:p-3 border-none"
         ></Button>
       </div>
     </section>
