@@ -10,7 +10,7 @@ const MobileHeader = () => {
   return (
     <Disclosure
       as="header"
-      className="md:hidden shadow-md bg-black text-white z-50"
+      className="md:hidden shadow-md bg-primary text-secondary z-50"
     >
       {({ open }) => (
         <>
@@ -49,15 +49,13 @@ const MobileHeader = () => {
               <div className="w-1/2">
                 <Button
                   label="Book a Demo"
-                  arrow
-                  classNames="text-primary bg-secondary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300 w-full"
+                  classNames="text-primary bg-secondary rounded-lg px-4 py-2  transition-colors duration-300 w-full"
                 />
               </div>
               <div className="w-1/2">
                 <Button
                   label="Log In"
-                  arrow={false}
-                  classNames="text-secondary rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 w-full"
+                  classNames="text-primary bg-secondary rounded-lg px-4 py-2 transition-colors duration-300 w-full"
                 />
               </div>
             </div>
