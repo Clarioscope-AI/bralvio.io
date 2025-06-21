@@ -1,54 +1,25 @@
 "use client";
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import clsx from "clsx";
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
-const HeroTab = () => {
-  return (
-    <div className=" text-white text-center p-4">
-      <TabGroup>
-        <TabList className="flex flex-wrap justify-center">
-          <span>Bralvio works with</span>
-          <Tab
-            className={({ selected }) =>
-              clsx(
-                "px-1 bg-transparent text-inherit outline-none",
-                selected && "underline"
-              )
-            }
-          >
-            Generative AI Companies,
-          </Tab>
-          <Tab
-            className={({ selected }) =>
-              clsx(
-                "px-1 bg-transparent text-inherit outline-none",
-                selected && "underline"
-              )
-            }
-          >
-            U.S. Government Agencies
-          </Tab>
-          <span>&</span>
-          <Tab
-            className={({ selected }) =>
-              clsx(
-                "px-1 bg-transparent text-inherit outline-none",
-                selected && "underline"
-              )
-            }
-          >
-            Enterprises
-          </Tab>
-        </TabList>
+const MobileHeroTab = dynamic(() => import("./MobileHeroTab"), { ssr: false });
+const DesktopHeroTab = dynamic(() => import("./DesktopHeroTab"), {
+  ssr: false,
+});
 
-        <TabPanels className="mt-4 border-2 border-red-500">
-          <TabPanel>Content 1</TabPanel>
-          <TabPanel>Content 2</TabPanel>
-          <TabPanel>Content 3</TabPanel>
-        </TabPanels>
-      </TabGroup>
-    </div>
-  );
+const Header = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  return isMobile ? <MobileHeroTab /> : <DesktopHeroTab />;
 };
 
-export default HeroTab;
+export default Header;

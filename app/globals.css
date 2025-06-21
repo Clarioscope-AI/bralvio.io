@@ -1,10 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: oklch(0 0 0);       
-  --color-secondary: oklch(1 0 0);    
+  --color-primary: oklch(0 0 0);
+  --color-secondary: oklch(1 0 0);
   --color-tertiary: oklch(0.65 0.25 300);
 }
-body{
+body {
   background-color: var(--color-primary);
+}
+
+/* tab animation */
+@keyframes tabProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-tab-progress {
+  animation: tabProgress 4s linear forwards;
 }
