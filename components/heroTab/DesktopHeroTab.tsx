@@ -32,7 +32,10 @@ const DesktopHeroTab = () => {
             "U.S. Government Agencies &",
             "Enterprises",
           ].map((label, index) => (
-            <Tab key={index} className="flex flex-col items-center ">
+            <Tab
+              key={index}
+              className="flex flex-col items-center focus:outline-none focus:ring-0"
+            >
               {({ selected }) => (
                 <>
                   <span
@@ -58,7 +61,7 @@ const DesktopHeroTab = () => {
         <TabPanels className="mt-4 p-6">
           {/* tab-1 */}
           <TabPanel>
-            <div className="flex justify-around items-center gap-6">
+            <div className="flex justify-around items-center gap-6 border-2 border-amber-400">
               {[timeLogo, howardLogo, dlapiperLogo, ciscoLogo, cengageLogo].map(
                 (image, index) => (
                   <Image
@@ -74,72 +77,34 @@ const DesktopHeroTab = () => {
           </TabPanel>
           {/* tab-2 */}
           <TabPanel>
-            <div className="flex justify-around items-center gap-6">
-              <Image
-                src={howardLogo}
-                alt="Howard Logo"
-                width={100}
-                height={100}
-              />
-              <Image
-                src={dlapiperLogo}
-                alt="DLA Piper Logo"
-                width={100}
-                height={100}
-              />
-              <Image
-                src={howardLogo}
-                alt="Howard Logo"
-                width={100}
-                height={100}
-              />
-              <Image
-                src={dlapiperLogo}
-                alt="DLA Piper Logo"
-                width={100}
-                height={100}
-              />
-              <Image
-                src={howardLogo}
-                alt="Howard Logo"
-                width={100}
-                height={100}
-              />
+            <div className="flex justify-around items-center gap-6 border-2 border-red-400">
+              {[timeLogo, howardLogo, dlapiperLogo, ciscoLogo, cengageLogo].map(
+                (image, index) => (
+                  <Image
+                    key={index}
+                    src={image}
+                    alt="Time Logo"
+                    width={100}
+                    height={100}
+                  />
+                )
+              )}
             </div>
           </TabPanel>
           {/* tab-3 */}
           <TabPanel>
-            <div className="flex justify-around items-center gap-6">
-              <Image
-                src={ciscoLogo}
-                alt="Cisco Logo"
-                width={100}
-                height={100}
-              />
-              <Image
-                src={ciscoLogo}
-                alt="Cisco Logo"
-                width={100}
-                height={100}
-              />
-              <Image
-                src={cengageLogo}
-                alt="Cengage Logo"
-                width={100}
-                height={100}
-              />
-              <Image
-                src={cengageLogo}
-                alt="Cengage Logo"
-                width={100}
-                height={100}
-              />
-              <Image
-                src={cengageLogo}
-                alt="Cengage Logo"
-                width={100}
-                height={100}
-              />
+            <div className="flex justify-around items-center gap-6 border-2 border-blue-400">
+              {[timeLogo, howardLogo, dlapiperLogo, ciscoLogo, cengageLogo].map(
+                (image, index) => (
+                  <Image
+                    key={index}
+                    src={image}
+                    alt="Time Logo"
+                    width={100}
+                    height={100}
+                  />
+                )
+              )}
             </div>
           </TabPanel>
         </TabPanels>
