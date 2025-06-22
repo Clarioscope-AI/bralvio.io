@@ -34,8 +34,6 @@ const DesktopHeader: FC = () => {
           />
         </div>
       </div>
-
-      {/* Gradient Bottom Border */}
       <hr
         style={{
           backgroundImage:
