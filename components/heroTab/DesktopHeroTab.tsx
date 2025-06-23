@@ -30,23 +30,24 @@ const DesktopHeroTab: FC = (): JSX.Element => {
     cengageLogo,
     timeLogo,
   ];
-
+  // define tab lebels type
+  const labels: string[] = [
+    "Generative AI Companies,",
+    "U.S. Government Agencies &",
+    "Enterprises",
+  ];
   return (
     <div className="text-secondary text-center p-4">
       <TabGroup selectedIndex={selectedIndex} onChange={setSelectedIndex}>
         <TabList className="flex flex-wrap justify-center gap-2">
           <span className="flex items-end">Bralvio works with</span>
 
-          {[
-            "Generative AI Companies,",
-            "U.S. Government Agencies &",
-            "Enterprises",
-          ].map((label, index) => (
+          {labels?.map((label, index) => (
             <Tab
               key={index}
               className="flex flex-col items-center focus:outline-none focus:ring-0"
             >
-              {({ selected }) => (
+              {({ selected }: { selected: boolean }) => (
                 <>
                   <span
                     className={clsx(
