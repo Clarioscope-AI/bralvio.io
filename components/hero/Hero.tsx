@@ -8,7 +8,10 @@ const Hero: React.FC = (): JSX.Element => {
     <section className="flex flex-col items-center justify-center text-center p-8 h-[300px] lg:h-[550px] bg-primary text-secondary">
       <h1 className="lg:w-1/2 mx-auto font-normal text-3xl md:text-3xl lg:text-[70px] flex flex-wrap justify-center items-center gap-2">
         Power&nbsp;
-        <TextCube />
+        <TextCube
+          data={heroData?.keywords}
+          gradients="linear-gradient(50deg, #714DFF, #9C83FF 31.28%, #E151FF 77.97%, #FFF759 95.64%)"
+        />
         &nbsp;With Your Data
       </h1>
 

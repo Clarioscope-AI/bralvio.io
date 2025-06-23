@@ -1,23 +1,37 @@
 "use client";
-import "./TextCube.css";
 
-const items = ["Generative AI", "Government AI", "Enterprise AI"];
+import { useEffect, useState } from "react";
+import { TextCubeProps } from "@/types/TextCubeProps.type";
 
-export default function TextCube() {
-  const gradient =
-    "linear-gradient(50deg, #714DFF, #9C83FF 31.28%, #E151FF 77.97%, #FFF759 95.64%)";
+export default function TextCube({ data, gradients }: TextCubeProps) {
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRotation((prev) => prev + 120);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <span className="inline-block w-full lg:w-[418px] lg:h-[70px] h-[40px] perspective align-middle">
-      <div className="relative w-full h-full textcube-rotate">
-        {items.map((item, i) => (
+    <span className="inline-block w-full lg:w-[405px] lg:h-[80px] h-[40px] perspective align-middle">
+      <div
+        className="relative w-full h-full"
+        style={{
+          transform: `rotateX(${rotation}deg)`,
+          transformStyle: "preserve-3d",
+          transition: "transform 2s ease-in-out",
+        }}
+      >
+        {data.map((item, i) => (
           <div
             key={i}
             className="absolute w-full h-full flex items-center justify-center text-[28px] lg:text-[62px] leading-tight"
             style={{
               transform: `rotateX(${i * 120}deg) translateZ(35px)`,
               backfaceVisibility: "hidden",
-              backgroundImage: gradient,
+              backgroundImage: gradients,
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
               color: "transparent",

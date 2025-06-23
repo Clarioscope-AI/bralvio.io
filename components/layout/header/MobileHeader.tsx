@@ -16,7 +16,7 @@ const MobileHeader = () => {
         <>
           <div className="p-4 flex justify-between items-center relative">
             <div className={open ? "opacity-0" : "opacity-100"}>
-              <Logo size={36} />
+              <Logo size={30} />
             </div>
             <Disclosure.Button
               className="text-2xl transition-all duration-200 hover:text-secondary/85 z-50"
