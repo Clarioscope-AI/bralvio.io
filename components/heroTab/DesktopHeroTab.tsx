@@ -3,7 +3,8 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import clsx from "clsx";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-
+import { FaMicrosoft } from "react-icons/fa";
+import { FaMeta } from "react-icons/fa6";
 import timeLogo from "@/assets/hero_tab_img/time.png";
 import howardLogo from "@/assets/hero_tab_img/howard-hughes.png";
 import dlapiperLogo from "@/assets/hero_tab_img/dlapiper.png";
@@ -61,23 +62,51 @@ const DesktopHeroTab = () => {
         <TabPanels className="mt-4 p-6">
           {/* tab-1 */}
           <TabPanel>
-            <div className="flex justify-around items-center gap-6 border-2 border-amber-400">
-              {[timeLogo, howardLogo, dlapiperLogo, ciscoLogo, cengageLogo].map(
-                (image, index) => (
-                  <Image
-                    key={index}
-                    src={image}
-                    alt="Time Logo"
-                    width={100}
-                    height={100}
-                  />
-                )
-              )}
+            <div className="flex justify-around items-center gap-6">
+              <ul>
+                <li>
+                  <p className="text-3xl font bold flex items-center">
+                    <span>
+                      <FaMicrosoft />
+                    </span>
+                    Microsoft
+                  </p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p className="text-3xl font bold flex items-center">
+                    <span>
+                      <FaMeta />
+                    </span>
+                    Meta
+                  </p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p className="text-3xl font bold">Open ai</p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p className="text-3xl font bold">Adept</p>
+                </li>
+              </ul>
+              {[ciscoLogo, cengageLogo].map((image, index) => (
+                <Image
+                  key={index}
+                  src={image}
+                  alt="Time Logo"
+                  width={100}
+                  height={100}
+                />
+              ))}
             </div>
           </TabPanel>
           {/* tab-2 */}
           <TabPanel>
-            <div className="flex justify-around items-center gap-6 border-2 border-red-400">
+            <div className="flex justify-around items-center gap-6">
               {[timeLogo, howardLogo, dlapiperLogo, ciscoLogo, cengageLogo].map(
                 (image, index) => (
                   <Image
@@ -93,8 +122,8 @@ const DesktopHeroTab = () => {
           </TabPanel>
           {/* tab-3 */}
           <TabPanel>
-            <div className="flex justify-around items-center gap-6 border-2 border-blue-400">
-              {[timeLogo, howardLogo, dlapiperLogo, ciscoLogo, cengageLogo].map(
+            <div className="flex justify-around items-center gap-6">
+              {[howardLogo, cengageLogo, ciscoLogo, dlapiperLogo, timeLogo].map(
                 (image, index) => (
                   <Image
                     key={index}

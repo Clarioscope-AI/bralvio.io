@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const MobileHeroTab = () => {
   return (
-    <div className="border-2 border-gray-200 text-secondary p-2">
+    <div className="text-secondary p-2 w-full">
       <Marquee>
         <div className="flex space-x-5 md:space-x-10">
           {[
@@ -29,6 +29,8 @@ const MobileHeroTab = () => {
               height={70}
             />
           ))}
+          {/* make xtra space for fixing space */}
+          <span className="w-1 md:hidden"></span>
         </div>
       </Marquee>
     </div>
