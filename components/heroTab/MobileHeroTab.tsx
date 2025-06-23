@@ -1,10 +1,10 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import timeLogo from "@/assets/hero_tab_img/time.png";
-import howardLogo from "@/assets/hero_tab_img/howard-hughes.png";
-import dlapiperLogo from "@/assets/hero_tab_img/dlapiper.png";
-import ciscoLogo from "@/assets/hero_tab_img/cisco.png";
-import cengageLogo from "@/assets/hero_tab_img/cengage.png";
+import timeLogo from "@/assets/hero_tab_img/time.webp";
+import howardLogo from "@/assets/hero_tab_img/howard-hughes.webp";
+import dlapiperLogo from "@/assets/hero_tab_img/dlapiper.webp";
+import ciscoLogo from "@/assets/hero_tab_img/cisco.webp";
+import cengageLogo from "@/assets/hero_tab_img/cengage.webp";
 import Image from "next/image";
 
 const MobileHeroTab = () => {

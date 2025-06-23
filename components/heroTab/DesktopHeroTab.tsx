@@ -5,11 +5,11 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaMicrosoft } from "react-icons/fa";
 import { FaMeta } from "react-icons/fa6";
-import timeLogo from "@/assets/hero_tab_img/time.png";
-import howardLogo from "@/assets/hero_tab_img/howard-hughes.png";
-import dlapiperLogo from "@/assets/hero_tab_img/dlapiper.png";
-import ciscoLogo from "@/assets/hero_tab_img/cisco.png";
-import cengageLogo from "@/assets/hero_tab_img/cengage.png";
+import timeLogo from "@/assets/hero_tab_img/time.webp";
+import howardLogo from "@/assets/hero_tab_img/howard-hughes.webp";
+import dlapiperLogo from "@/assets/hero_tab_img/dlapiper.webp";
+import ciscoLogo from "@/assets/hero_tab_img/cisco.webp";
+import cengageLogo from "@/assets/hero_tab_img/cengage.webp";
 
 const DesktopHeroTab = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
