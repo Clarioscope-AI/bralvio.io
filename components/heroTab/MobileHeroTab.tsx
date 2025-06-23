@@ -1,25 +1,26 @@
-import React from "react";
+import { FC, JSX } from "react";
 import Marquee from "react-fast-marquee";
 import timeLogo from "@/assets/hero_tab_img/time.webp";
 import howardLogo from "@/assets/hero_tab_img/howard-hughes.webp";
 import dlapiperLogo from "@/assets/hero_tab_img/dlapiper.webp";
 import ciscoLogo from "@/assets/hero_tab_img/cisco.webp";
 import cengageLogo from "@/assets/hero_tab_img/cengage.webp";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-const MobileHeroTab = () => {
+const MobileHeroTab: FC = (): JSX.Element => {
+  const images: StaticImageData[] = [
+    timeLogo,
+    howardLogo,
+    dlapiperLogo,
+    ciscoLogo,
+    cengageLogo,
+    timeLogo,
+  ];
   return (
     <div className="text-secondary p-2 w-full">
       <Marquee>
         <div className="flex space-x-5 md:space-x-10">
-          {[
-            timeLogo,
-            howardLogo,
-            dlapiperLogo,
-            ciscoLogo,
-            cengageLogo,
-            timeLogo,
-          ].map((image, index) => (
+          {images.map((image: StaticImageData, index: number) => (
             <Image
               className=" w-16 h-16 md:w-20 md:h-20 object-contain"
               key={index}

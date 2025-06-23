@@ -1,8 +1,8 @@
 "use client";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import clsx from "clsx";
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import Image, { StaticImageData } from "next/image";
+import { FC, JSX, useEffect, useState } from "react";
 import { FaMicrosoft } from "react-icons/fa";
 import { FaMeta } from "react-icons/fa6";
 import timeLogo from "@/assets/hero_tab_img/time.webp";
@@ -11,7 +11,7 @@ import dlapiperLogo from "@/assets/hero_tab_img/dlapiper.webp";
 import ciscoLogo from "@/assets/hero_tab_img/cisco.webp";
 import cengageLogo from "@/assets/hero_tab_img/cengage.webp";
 
-const DesktopHeroTab = () => {
+const DesktopHeroTab: FC = (): JSX.Element => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
@@ -21,6 +21,15 @@ const DesktopHeroTab = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  const images: StaticImageData[] = [
+    timeLogo,
+    howardLogo,
+    dlapiperLogo,
+    ciscoLogo,
+    cengageLogo,
+    timeLogo,
+  ];
 
   return (
     <div className="text-secondary text-center p-4">
@@ -93,7 +102,23 @@ const DesktopHeroTab = () => {
                   <p className="text-3xl font bold">Adept</p>
                 </li>
               </ul>
-              {[ciscoLogo, cengageLogo].map((image, index) => (
+              {[ciscoLogo, cengageLogo].map(
+                (image: StaticImageData, index: number) => (
+                  <Image
+                    key={index}
+                    src={image}
+                    alt="Time Logo"
+                    width={100}
+                    height={100}
+                  />
+                )
+              )}
+            </div>
+          </TabPanel>
+          {/* tab-2 */}
+          <TabPanel>
+            <div className="flex justify-around items-center gap-6">
+              {images?.map((image: StaticImageData, index: number) => (
                 <Image
                   key={index}
                   src={image}
@@ -104,36 +129,18 @@ const DesktopHeroTab = () => {
               ))}
             </div>
           </TabPanel>
-          {/* tab-2 */}
-          <TabPanel>
-            <div className="flex justify-around items-center gap-6">
-              {[timeLogo, howardLogo, dlapiperLogo, ciscoLogo, cengageLogo].map(
-                (image, index) => (
-                  <Image
-                    key={index}
-                    src={image}
-                    alt="Time Logo"
-                    width={100}
-                    height={100}
-                  />
-                )
-              )}
-            </div>
-          </TabPanel>
           {/* tab-3 */}
           <TabPanel>
             <div className="flex justify-around items-center gap-6">
-              {[howardLogo, cengageLogo, ciscoLogo, dlapiperLogo, timeLogo].map(
-                (image, index) => (
-                  <Image
-                    key={index}
-                    src={image}
-                    alt="Time Logo"
-                    width={100}
-                    height={100}
-                  />
-                )
-              )}
+              {images?.map((image: StaticImageData, index: number) => (
+                <Image
+                  key={index}
+                  src={image}
+                  alt="Time Logo"
+                  width={100}
+                  height={100}
+                />
+              ))}
             </div>
           </TabPanel>
         </TabPanels>
