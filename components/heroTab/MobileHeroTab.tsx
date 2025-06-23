@@ -8,6 +8,7 @@ import cengageLogo from "@/assets/hero_tab_img/cengage.webp";
 import Image, { StaticImageData } from "next/image";
 
 const MobileHeroTab: FC = (): JSX.Element => {
+  // define image types
   const images: StaticImageData[] = [
     timeLogo,
     howardLogo,
@@ -20,7 +21,7 @@ const MobileHeroTab: FC = (): JSX.Element => {
     <div className="text-secondary p-2 w-full">
       <Marquee>
         <div className="flex space-x-5 md:space-x-10">
-          {images.map((image: StaticImageData, index: number) => (
+          {images?.map((image: StaticImageData, index: number) => (
             <Image
               className=" w-16 h-16 md:w-20 md:h-20 object-contain"
               key={index}

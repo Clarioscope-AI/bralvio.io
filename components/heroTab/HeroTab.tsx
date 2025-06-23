@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { FC, JSX, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 const MobileHeroTab = dynamic(() => import("./MobileHeroTab"), { ssr: false });
@@ -7,8 +7,8 @@ const DesktopHeroTab = dynamic(() => import("./DesktopHeroTab"), {
   ssr: false,
 });
 
-const Header = () => {
-  const [isMobile, setIsMobile] = useState(false);
+const HeroTab: FC = (): JSX.Element => {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -22,4 +22,4 @@ const Header = () => {
   return isMobile ? <MobileHeroTab /> : <DesktopHeroTab />;
 };
 
-export default Header;
+export default HeroTab;

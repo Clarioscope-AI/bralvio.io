@@ -21,7 +21,7 @@ const DesktopHeroTab: FC = (): JSX.Element => {
 
     return () => clearInterval(interval);
   }, []);
-
+  // define image type
   const images: StaticImageData[] = [
     timeLogo,
     howardLogo,
