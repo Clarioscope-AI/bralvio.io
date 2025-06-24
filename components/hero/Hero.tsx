@@ -5,7 +5,7 @@ import TextCube from "./TextCube";
 
 const Hero: React.FC = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center justify-center text-center p-8 h-[300px] lg:h-[550px] bg-primary text-secondary">
+    <section className="flex flex-col items-center justify-center text-center p-8 h-[300px] lg:h-[550px] bg-primary text-secondary mt-[80px] md:mt-0">
       <h1 className="lg:w-1/2 mx-auto font-normal text-3xl md:text-3xl lg:text-[70px] flex flex-wrap justify-center items-center gap-2">
         Power&nbsp;
         <TextCube
