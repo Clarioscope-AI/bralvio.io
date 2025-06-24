@@ -18,12 +18,12 @@ const MobileHeroTab: FC = (): JSX.Element => {
     timeLogo,
   ];
   return (
-    <div className="text-secondary p-2 w-full">
+    <div className="text-secondary p-2 w-full my-20 md:my-0">
       <Marquee>
         <div className="flex space-x-5 md:space-x-10">
           {images?.map((image: StaticImageData, index: number) => (
             <Image
-              className=" w-16 h-16 md:w-20 md:h-20 object-contain"
+              className=" w-16 h-16 md:w-20 md:h-20 object-contain mx-8"
               key={index}
               src={image}
               alt="Time Logo"

@@ -9,6 +9,24 @@ body {
   background-color: var(--color-primary);
 }
 
+.perspective {
+  perspective: 800px;
+}
+
+@keyframes slow-spin {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.textcube-rotate {
+  animation: slow-spin 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
 /* tab animation */
 @keyframes tabProgress {
   from {

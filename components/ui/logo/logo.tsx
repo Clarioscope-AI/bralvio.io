@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { LogoProps } from "@/types/logo.types";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.webp"
 const Logo: React.FC<LogoProps> = ({ size = 40 }) => {
   return (
     <Image
