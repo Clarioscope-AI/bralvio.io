@@ -1,4 +1,3 @@
-
 import React, { JSX } from "react";
 import { heroData } from "@/data/heroData";
 import Button from "@/components/ui/button/Button";
@@ -7,7 +6,7 @@ import Particles from "@/Particles/Particles";
 
 const Hero: React.FC = (): JSX.Element => {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center p-8 h-[300px] lg:h-[550px] bg-primary text-secondary mt-[80px] md:mt-0">
+    <section className="relative flex flex-col items-center justify-center text-center p-8 h-[300px] lg:h-[550px] bg-primary text-secondary mt-[80px] md:mt-12 md:mb-14 ">
       <div className="absolute inset-0 z-0">
         <Particles
           particleCount={200}
@@ -34,20 +33,20 @@ const Hero: React.FC = (): JSX.Element => {
            With Your Data
         </h1>
 
-        <p className="text-[12px] lg:text-[16px] w-full md:w-2/3 lg:w-1/2 mx-auto my-6">
+        <p className="text-[12px] lg:text-[16px] w-full md:w-2/3 lg:w-1/2 mx-auto my-6 ">
           {heroData?.description || ""}
         </p>
 
-        <div className="flex flex-col lg:justify-center md:flex-row gap-3">
+        <div className="flex flex-col md:justify-center  md:flex-row gap-3 md:mt-7">
           <Button
             label="Book a Demo"
             arrow
-            classNames="text-primary bg-secondary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300"
+            classNames="text-center text-primary bg-secondary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300 "
           />
           <Button
             label="Build AI"
             arrow
-            classNames="text-secondary flex justify-center rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 text-center md:text-start"
+            classNames="text-secondary flex justify-center rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 text-center "
           />
         </div>
       </div>
