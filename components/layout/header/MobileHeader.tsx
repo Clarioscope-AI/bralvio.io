@@ -4,13 +4,13 @@ import Link from "next/link";
 import { headerMenus } from "@/data/headerMenus";
 import Logo from "@/components/ui/logo/logo";
 import { FiMenu, FiX } from "react-icons/fi";
-import Button from "@/components/ui/button/Button";
+
 
 const MobileHeader = () => {
   return (
     <Disclosure
       as="header"
-      className="md:hidden shadow-md bg-primary text-secondary z-50"
+      className=" shadow-md bg-primary text-secondary z-50"
     >
       {({ open }) => (
         <>

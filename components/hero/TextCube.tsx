@@ -15,7 +15,7 @@ export default function TextCube({ data, gradients }: TextCubeProps) {
   }, []);
 
   return (
-    <span className="inline-block w-full lg:w-[405px] lg:h-[80px] h-[40px] perspective align-middle">
+    <span className="inline-block w-full lg:w-[405px] lg:h-[80px] h-[40px] perspective align-middle my-3">
       <div
         className="relative w-full h-full"
         style={{
