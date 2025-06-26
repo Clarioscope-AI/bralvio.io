@@ -37,7 +37,7 @@ const DesktopHeroTab: FC = (): JSX.Element => {
     "Enterprises",
   ];
   return (
-    <div className="text-secondary text-center p-4">
+    <div className="text-secondary text-center px-4">
       <TabGroup selectedIndex={selectedIndex} onChange={setSelectedIndex}>
         <TabList className="flex flex-wrap justify-center gap-2">
           <span className="flex items-end">Bralvio works with</span>
