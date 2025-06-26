@@ -31,7 +31,7 @@ const Slider = () => {
             className="w-20 h-20"
           ></Image>
           <div className="group">
-            <h3 className="text-[#D2ACD8] font-semibold">{slide?.title}</h3>
+            <h3 className="text-tertiary font-semibold">{slide?.title}</h3>
             <p className="text-secondary font-semibold text-[14px] lg:text-xl hidden lg:flex">
               {slide?.subtitle}
             </p>

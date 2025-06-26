@@ -12,10 +12,10 @@ const AiResearch: FC = (): JSX.Element => {
           description="SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research."
         ></SectionHeader>
         <Button
-          label="Learn More"
+          label="Lern More"
           arrow
-          classNames="bg-[#D2ACD8] group:hover-bg-[#5B3557] border-1 border-purple-700 p-2 text-secondary rounded-lg"
-        ></Button>
+          classNames="text-center text-secondary bg-tertiary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300 "
+        />
       </div>
       <div>
         <Slider></Slider>
