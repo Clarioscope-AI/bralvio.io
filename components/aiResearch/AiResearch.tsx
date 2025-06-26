@@ -6,7 +6,7 @@ import Slider from "@/components/aiResearch/Slider";
 const AiResearch: FC = (): JSX.Element => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center my-8 lg:my-12">
+      <div className="flex flex-col items-center justify-center my-8 lg:my-28">
         <SectionHeader
           title="Frontier AI Research"
           description="SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research."
