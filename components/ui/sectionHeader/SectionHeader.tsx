@@ -7,7 +7,7 @@ const SectionHeader = ({ title, description }: SectionHeaderProps) => {
   return (
     <div className=" text-center max-w-2xl mx-auto my-8 text-secondary">
       <h2 className="text-3xl lg:text-5xl mb-2">{title}</h2>
-      <p className="">{description}</p>
+      <p className="text-[12px] lg:text-[16px] px-8">{description}</p>
     </div>
   );
 };
