@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const Partner: FC = (): JSX.Element => {
   return (
-    <div className="my-10 lg:my-20">
+    <div className="my-28 lg:my-42">
       {/* for desktop */}
       <p className="max-w-max mb-10 md:mb-12 text-center mx-auto uppercase leading-[1.70] text-xs px-3 sm:px-0 md:text-sm tracking-[4px] text-secondary">
         GENERATIVE AI PROVIDERS WE PARTNER&nbsp;WITH:
