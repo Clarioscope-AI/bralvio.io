@@ -52,7 +52,7 @@ const MobileEnterpriseAi: React.FC = () => {
         />
       </div>
 
-      <div className="flex flex-col justify-center mx-auto h-[590px] sm:h-[700px] mb-24 md:mb-20 xl:hidden mt-10">
+      <div className="flex flex-col justify-center mx-auto h-[590px] sm:h-[700px] mb-12 md:mb-20 xl:hidden mt-10">
         <div
           ref={scrollContainerRef}
           className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth"
