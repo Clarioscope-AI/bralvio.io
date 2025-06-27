@@ -42,7 +42,7 @@ const DesktopEnterpriseAi: React.FC = () => {
                   index === textSections.length - 1
                     ? "border-transparent"
                     : "border-white/10"
-                } hover:border-white hover:last:border-white transition-all duration-300 cursor-pointer ${
+                } hover:border-white hover:last:border-white transition-all duration-300 cursor-pointer p-6 ${
                   activeSection === "new-feature"
                     ? "opacity-100"
                     : activeSection === section.id
