@@ -14,7 +14,7 @@ const DesktopEnterpriseAi: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-20 mb-16">
+      <div className="flex flex-col justify-center items-center mt-52 mb-16">
         <button className="mb-5 lg:mb-2 overflow-hidden tracking-[3px] text-xs md:px-5 md:py-2 lg:text-xs uppercase bg-black/55 bg-opacity-5 shadow-lg text-[#D1AAD7] rounded-full px-4 py-2 border-1">
           AI for the Enterprise
         </button>
