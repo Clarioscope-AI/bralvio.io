@@ -1,3 +1,4 @@
+import AiApplication from "@/components/aiApplication/AiApplication";
 import AiResearch from "@/components/aiResearch/AiResearch";
 import DataEngine from "@/components/dataEngine/DataEngine";
 import EnterpriseAi from "@/components/enterpriseAi/EnterpriseAi";
@@ -15,6 +16,7 @@ export default function Home() {
       <AiResearch></AiResearch>
       <Partner></Partner>
       <DataEngine></DataEngine>
+      <AiApplication></AiApplication>
     </>
   );
 }
