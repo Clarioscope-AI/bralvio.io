@@ -1,4 +1,5 @@
 import AiResearch from "@/components/aiResearch/AiResearch";
+import DataEngine from "@/components/dataEngine/DataEngine";
 import Hero from "@/components/hero/Hero";
 import HeroTab from "@/components/heroTab/HeroTab";
 import Header from "@/components/layout/header/header";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroTab></HeroTab>
       <AiResearch></AiResearch>
       <Partner></Partner>
+      <DataEngine></DataEngine>
     </>
   );
 }
