@@ -14,7 +14,7 @@ const AiResearch: FC = (): JSX.Element => {
         <Button
           label="Lern More"
           arrow
-          classNames="text-center text-secondary bg-tertiary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300 "
+          classNames="text-center text-secondary bg-tertiary rounded-lg px-4 py-2 "
         />
       </div>
       <div>

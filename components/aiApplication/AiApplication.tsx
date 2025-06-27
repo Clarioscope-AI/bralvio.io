@@ -42,14 +42,14 @@ const AiApplication: FC = (): JSX.Element => {
         {/* card-2 */}
         <div className="border-1 border-gray-700 bg-[#111317] rounded-xl p-8 relative h-[400px] md:h-[450px] lg:h-[500px]">
           <p className=" uppercase leading-[1.70] text-xs sm:px-0 md:text-sm tracking-[4px] text-secondary mb-3 lg:mb-5">
-            BRALVIO DONOVAN
+            BRALVIO GENAI PLATEFORM
           </p>
           <h3 className="text-2xl text-secondary my-2">
-            Ai-Powered Decision-Making For Defense
+            Ai for the Enterprise
           </h3>
           <p className="text-gray-400 mb-2">
-            Ai-powered decision making support: plan, analyze and act in
-            minutes.
+            Transform your data into customized enterprise-ready Generative AI
+            applications.
           </p>
           <div className="absolute bottom-0 right-0">
             <Image
