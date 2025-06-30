@@ -17,6 +17,7 @@ export default function Home() {
       <AiResearch></AiResearch>
       <Partner></Partner>
       <DataEngine></DataEngine>
+      <DataCuration></DataCuration>
       <AiApplication></AiApplication>
     </>
   );
