@@ -32,8 +32,8 @@ const DesktopEnterpriseAi: React.FC = () => {
         />
       </div>
 
-      <div className="hidden xl:flex flex-row items-center justify-center min-h-[624px] mt-0 mb-16 relative isolate">
-        <div className="relative z-10 w-6/12 min-w-[510px] -mr-9 pr-9">
+      <div className="hidden xl:flex flex-row items-center justify-center min-h-[624px] my-10 lg:my-32 relative isolate">
+        <div className="relative z-10 w-5/12 min-w-[510px] -mr-9 pr-9">
           <div className="relative w-full">
             {textSections.map((section, index) => (
               <div
@@ -42,7 +42,7 @@ const DesktopEnterpriseAi: React.FC = () => {
                   index === textSections.length - 1
                     ? "border-transparent"
                     : "border-white/10"
-                } hover:border-white hover:last:border-white transition-all duration-300 cursor-pointer ${
+                } hover:border-white hover:last:border-white transition-all duration-300 cursor-pointer p-6 ${
                   activeSection === "new-feature"
                     ? "opacity-100"
                     : activeSection === section.id
@@ -52,11 +52,11 @@ const DesktopEnterpriseAi: React.FC = () => {
                 onMouseEnter={() => setActiveSection(section.id)}
                 onMouseLeave={() => setActiveSection("new-feature")}
               >
-                <p className="w-full pt-6 pb-2 text-3xl font-bold leading-10 text-left text-white font-aeonik">
+                <p className="w-full pt-6 pb-2 text-2xl font-bold leading-10 text-left text-white font-aeonik">
                   {section.title}
                 </p>
                 <p
-                  className={`pb-6 text-white text-lg transition-opacity duration-300 ${
+                  className={`pb-6 text-white text-base transition-opacity duration-300 ${
                     activeSection === "new-feature"
                       ? "opacity-100"
                       : activeSection === section.id

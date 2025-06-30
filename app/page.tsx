@@ -1,3 +1,4 @@
+import AiApplication from "@/components/aiApplication/AiApplication";
 import AiResearch from "@/components/aiResearch/AiResearch";
 import DataCuration from "@/components/dataCuration/DataCuration";
 import DataEngine from "@/components/dataEngine/DataEngine";
@@ -16,7 +17,7 @@ export default function Home() {
       <AiResearch></AiResearch>
       <Partner></Partner>
       <DataEngine></DataEngine>
-      <DataCuration></DataCuration>
+      <AiApplication></AiApplication>
     </>
   );
 }

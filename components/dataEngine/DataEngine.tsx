@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const DataEngine: FC = (): JSX.Element => {
   return (
-    <div className="my-10 lg:my-28 w-full px-4 lg:px-32">
+    <div className="my-10 lg:my-28 w-full px-4 lg:px-28">
       <div className="flex flex-col items-center mb-4 lg:mb-10">
         <Button
           label="Build AI"
