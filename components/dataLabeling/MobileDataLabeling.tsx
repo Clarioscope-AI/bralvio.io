@@ -1,18 +1,13 @@
+'use client';
 import React, { useState } from 'react';
 import Button from '../ui/button/Button';
+import { LabelingCategory } from '@/types/dataLabelingTypes';
+import { labelingImages } from '@/data/dataLabeling';
 
 const MobileDataLabeling = () => {
-  const [activeTab, setActiveTab] = useState('3D');
+  const [activeTab, setActiveTab] = useState<LabelingCategory>('3D');
 
-  const images = {
-    "3D": "https://i.ibb.co/w1c8zNH/calligraphy-7188024-1280.jpg",
-    Image: "https://i.ibb.co/T41ndVR/logosd.webp",
-    Mapping: "https://i.ibb.co/hDDmvGh/books-5504893-1280.jpg",
-    Text: "https://i.ibb.co/61phbXv/meshign.jpg",
-    Audio: "https://i.ibb.co/4p3sVvB/math.jpg",
-  };
-
-  const handleTabClick = (tab) => {
+  const handleTabClick = (tab: LabelingCategory) => {
     setActiveTab(tab);
   };
 
@@ -23,14 +18,16 @@ const MobileDataLabeling = () => {
         The best quality data to fuel the best performing models
       </p>
 
-      <div className="overflow-x-auto mb-4 ">
-        <div className="flex space-x-2 w-max text-center justify-center mx-auto">
-          {["3D", "Image", "Mapping", "Text", "Audio"].map((tab) => (
+      <div className="overflow-x-auto mb-4">
+        <div className="flex space-x-2 w-max text-center justify-center mx-auto gap-2">
+          {(["3D", "Image", "Mapping", "Text", "Audio"] as LabelingCategory[]).map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-2 rounded text-sm ${
-                activeTab === tab ? "bg-gray-600" : "bg-gray-700"
-              } hover:bg-gray-600 transition-colors duration-200`}
+              className={`px-4 py-2 rounded text-white mx-auto text-sm ${
+                activeTab === tab
+                  ? "bg-gray-600 shadow-inner"
+                  : "bg-gray-700 hover:bg-gray-600"
+              } transition-colors duration-200`}
               onClick={() => handleTabClick(tab)}
             >
               {tab}
@@ -40,7 +37,7 @@ const MobileDataLabeling = () => {
       </div>
 
       <img
-        src={images[activeTab]}
+        src={labelingImages[activeTab]}
         alt={`${activeTab} labeled objects`}
         className="w-full h-56 object-cover rounded-lg mb-4"
       />
@@ -54,7 +51,7 @@ const MobileDataLabeling = () => {
       <Button
         label="Label my data"
         arrow
-        classNames="text-primary bg-[#B277AB] hover:text-white rounded-lg px-4 py-2 hover:bg-[#5B3557] transition-colors duration-300"
+        classNames="text-primary bg-[#B277AB] hover:text-white rounded-lg px-4 py-2 hover:bg-[#5B3557] transition-colors duration-300 mt-5"
       />
     </div>
   );
