@@ -7,6 +7,7 @@ import Hero from "@/components/hero/Hero";
 import HeroTab from "@/components/heroTab/HeroTab";
 import Header from "@/components/layout/header/header";
 import Partner from "@/components/partner/Partner";
+import Secure from "@/components/secure/Secure";
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
       <DataEngine></DataEngine>
       <DataCuration></DataCuration>
       <AiApplication></AiApplication>
+      <Secure></Secure>
     </>
   );
 }
