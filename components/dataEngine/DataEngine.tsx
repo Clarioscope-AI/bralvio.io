@@ -27,7 +27,7 @@ const DataEngine: FC = (): JSX.Element => {
             Powering the next generation of Generative AI Label My Data
           </p>
           <p className="text-[14px] lg:text-[16px] my-7">
-            Scale Generative AI Data Engine powers the most advanced LLMs and
+            Bralvio Generative AI Data Engine powers the most advanced LLMs and
             generative models in the world through world-class RLHF, data
             generation, model evaluation, safety, and alignment.
           </p>
