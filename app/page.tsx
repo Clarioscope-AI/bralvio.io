@@ -1,5 +1,6 @@
 import AiApplication from "@/components/aiApplication/AiApplication";
 import AiResearch from "@/components/aiResearch/AiResearch";
+import CaseStudies from "@/components/caseStudies/CaseStudies";
 import DataCuration from "@/components/dataCuration/DataCuration";
 import DataEngine from "@/components/dataEngine/DataEngine";
 import DataLabeling from "@/components/dataLabeling/DataLabeling";
@@ -22,6 +23,7 @@ export default function Home() {
       <DataEngine></DataEngine>
       <DataCuration></DataCuration>
       <AiApplication></AiApplication>
+      <CaseStudies></CaseStudies>
       <Secure></Secure>
     </>
   );
