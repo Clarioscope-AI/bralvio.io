@@ -4,6 +4,7 @@ import DataCuration from "@/components/dataCuration/DataCuration";
 import DataEngine from "@/components/dataEngine/DataEngine";
 import DataLabeling from "@/components/dataLabeling/DataLabeling";
 import EnterpriseAi from "@/components/enterpriseAi/EnterpriseAi";
+import FutureIndustry from "@/components/futureIndustry/FutureIndustry";
 import Hero from "@/components/hero/Hero";
 import HeroTab from "@/components/heroTab/HeroTab";
 import Header from "@/components/layout/header/header";
@@ -23,6 +24,7 @@ export default function Home() {
       <DataCuration></DataCuration>
       <AiApplication></AiApplication>
       <Secure></Secure>
+      <FutureIndustry></FutureIndustry>
     </>
   );
 }
