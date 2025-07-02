@@ -4,10 +4,8 @@ import case2 from "@/assets/case-studies/slide-2.webp";
 import case3 from "@/assets/case-studies/slide-3.webp";
 import case4 from "@/assets/case-studies/slide-4.webp";
 import case5 from "@/assets/case-studies/slide-5.webp";
-import case6 from "@/assets/case-studies/slide-6.webp";
 import case7 from "@/assets/case-studies/slide-7.webp";
 import case8 from "@/assets/case-studies/slide-8.webp";
-import case9 from "@/assets/case-studies/slide-9.webp";
 import case10 from "@/assets/case-studies/slide-10.webp";
 
 
@@ -52,7 +50,7 @@ export const caseStudiesSlides: CaseStudySlideData[] = [
   {
     title: "Blog",
     subtitle: "Why Is ChatGPT So Good?",
-    image: case6,
+    image: case10,
     
   },
   {
@@ -70,7 +68,7 @@ export const caseStudiesSlides: CaseStudySlideData[] = [
   {
     title: "Blog",
     subtitle: "How Much Better Is OpenAI's Newest GPT-3 Model?",
-    image: case9,
+    image: case10,
     
   },
   {
