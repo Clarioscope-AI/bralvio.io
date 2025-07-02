@@ -32,12 +32,12 @@ const FutureIndustry: FC = () => {
         <Button
           label="Book a Demo"
           arrow
-          classNames="text-center text-sm text-primary bg-secondary rounded-lg px-2 py-1  lg:px-4 lg:py-2 hover:bg-secondary/90 transition-colors duration-300 "
+          classNames=" text-center text-sm text-primary bg-secondary rounded-lg px-2 py-1  lg:px-4 lg:py-2 hover:bg-secondary/90 transition-colors duration-300 cursor-pointer"
         />
         <Button
           label="Build AI"
           arrow
-          classNames="text-secondary text-sm flex justify-center rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 text-center "
+          classNames="text-secondary text-sm flex justify-center rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 text-center cursor-pointer"
         />
       </div>
     </div>
