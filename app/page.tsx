@@ -6,6 +6,7 @@ import DataCuration from "@/components/dataCuration/DataCuration";
 import DataEngine from "@/components/dataEngine/DataEngine";
 import DataLabeling from "@/components/dataLabeling/DataLabeling";
 import EnterpriseAi from "@/components/enterpriseAi/EnterpriseAi";
+import Footer from "@/components/footer/Footer";
 import FutureIndustry from "@/components/futureIndustry/FutureIndustry";
 import Hero from "@/components/hero/Hero";
 import HeroTab from "@/components/heroTab/HeroTab";
@@ -29,6 +30,8 @@ export default function Home() {
       <CaseStudies></CaseStudies>
       <Secure></Secure>
       <FutureIndustry></FutureIndustry>
+
+      <Footer></Footer>
     </>
   );
 }
