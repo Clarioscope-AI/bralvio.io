@@ -10,6 +10,7 @@ import Hero from "@/components/hero/Hero";
 import HeroTab from "@/components/heroTab/HeroTab";
 import Header from "@/components/layout/header/header";
 import Partner from "@/components/partner/Partner";
+import Review from "@/components/review/Review";
 import Secure from "@/components/secure/Secure";
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <DataLabeling></DataLabeling>
       <DataEngine></DataEngine>
       <DataCuration></DataCuration>
+      <Review></Review>
       <AiApplication></AiApplication>
       <CaseStudies></CaseStudies>
       <Secure></Secure>
