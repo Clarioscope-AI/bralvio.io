@@ -1,10 +1,12 @@
 import AiApplication from "@/components/aiApplication/AiApplication";
 import AiResearch from "@/components/aiResearch/AiResearch";
 import CaseStudies from "@/components/caseStudies/CaseStudies";
+import Customer from "@/components/customer/Customer";
 import DataCuration from "@/components/dataCuration/DataCuration";
 import DataEngine from "@/components/dataEngine/DataEngine";
 import DataLabeling from "@/components/dataLabeling/DataLabeling";
 import EnterpriseAi from "@/components/enterpriseAi/EnterpriseAi";
+import Footer from "@/components/footer/Footer";
 import FutureIndustry from "@/components/futureIndustry/FutureIndustry";
 import Hero from "@/components/hero/Hero";
 import HeroTab from "@/components/heroTab/HeroTab";
@@ -25,10 +27,13 @@ export default function Home() {
       <DataEngine></DataEngine>
       <DataCuration></DataCuration>
       <Review></Review>
+      <Customer></Customer>
       <AiApplication></AiApplication>
       <CaseStudies></CaseStudies>
       <Secure></Secure>
       <FutureIndustry></FutureIndustry>
+
+      <Footer></Footer>
     </>
   );
 }
