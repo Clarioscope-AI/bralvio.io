@@ -12,38 +12,38 @@ export interface SlideData {
 
 export const slides: SlideData[] = [
   {
-    title: "Leaderboards",
-    subtitle: "SEAL Leaderboards: Expert-Driven Private Evaluations",
+    title: "Clinical Studies",
+    subtitle: "MIRL Clinical Trials: Evidence-Based Medical Device Validation",
     image: slideimg,
     link: "",
   },
   {
     title: "Research",
-    subtitle: "LLMs Easily Jailbroken as Browser Agents",
+    subtitle: "AI-Enhanced Diagnostic Accuracy in Remote Healthcare Settings",
     image: slideimg2,
     link: "",
   },
   {
     title: "Research",
-    subtitle: "Multi-Turn Human Jailbreaks.",
+    subtitle: "Wearable Sensors for Continuous Patient Monitoring",
     image: slideimg3,
     link: "",
   },
   {
     title: "Research",
-    subtitle: "Examination of LLM Performance on Grade School Arithmetic",
+    subtitle: "IoT Integration in Medical Devices for Enhanced Patient Care",
     image: slideimg,
     link: "",
   },
   {
     title: "Research",
-    subtitle: "Examination of LLM Performance on Grade School Arithmetic",
+    subtitle: "Miniaturization Techniques for Implantable Medical Devices",
     image: slideimg3,
     link: "",
   },
   {
     title: "Research",
-    subtitle: "Examination of LLM Performance on Grade School Arithmetic",
+    subtitle: "Regulatory Pathways for Novel Medical Technologies",
     image: slideimg2,
     link: "",
   },

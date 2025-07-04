@@ -8,11 +8,11 @@ const AiResearch: FC = (): JSX.Element => {
     <>
       <div className="flex flex-col items-center justify-center my-8 lg:my-28">
         <SectionHeader
-          title="Frontier AI Research"
-          description="SEAL (Safety, Evaluations, and Alignment Lab) is our research initiative to improve model capabilities through challenging private evaluations and novel research."
+          title="Medical Innovation Research"
+          description="MIRL (Medical Innovation Research Lab) is our research initiative to improve healthcare outcomes through clinical evaluations and novel medical device development."
         ></SectionHeader>
         <Button
-          label="Lern More"
+          label="Learn More"
           arrow
           classNames="text-center text-secondary bg-tertiary rounded-lg px-4 py-2 "
         />

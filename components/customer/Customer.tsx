@@ -11,7 +11,7 @@ const Customer = (): ReactElement => {
           We have changed the game of AI
           <br className="hidden lg:block" />
           <span className="lg:inline block">
-            data—hear it from our customers.
+            data. Let's hear it from our customers.
           </span>
         </h1>
 

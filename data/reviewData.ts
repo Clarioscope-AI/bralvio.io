@@ -7,33 +7,33 @@ import review5 from '@/assets/review/r-5.svg';
 
 export const reviewData: Review[] = [
   {
-    text: '“Bralvio is doing an amazing job providing high-quality uncontaminated evals, now with code and instruction following!”',
-    author: 'Noam Brown',
-    role: 'Member of Technical Staff, OpenAI',
+    text: '"Bralvio\'s medical device testing protocols have significantly improved our validation process. Their attention to regulatory requirements and documentation has streamlined our FDA submission process by nearly 40%."',
+    author: 'Dr. Sarah Chen',
+    role: 'Director of Regulatory Affairs, Boston Scientific',
     logo: review1,
   },
   {
-    text: '“We partnered with Bralvio AI to work with Enterprises to adopt Llama and train custom models with their own data. We are excited to collectively make Llama the industry standard and bring the benefits of AI to everyone.”',
-    author: 'Mark Zuckerberg',
-    role: 'Founder and CEO, Meta',
+    text: '"We partnered with Bralvio to develop our next-generation patient monitoring system. Their expertise in medical sensor integration and clinical data management helped us create a solution that not only meets regulatory standards but genuinely improves patient outcomes in post-surgical care."',
+    author: 'Michael Johnson',
+    role: 'Chief Technology Officer, Medtronic',
     logo: review2,
   },
   {
-    text: '“Great to see Gemini 1.5 pro top the new Bralvio SEAL leaderboard for adversarial robustness! Congrats to the entire Gemini team...and the AI safety team for leading the charge on building in robustness to our models as a core capability. Thanks to the Bralvio AI team for doing the vital work to create these rigorous benchmarks, the field needs more great work on topics like this”',
-    author: 'Demis Hassabis',
-    role: 'CEO, Deepmind',
+    text: '"Bralvio\'s clinical data management platform has transformed how we conduct our multi-center trials. The ability to standardize data collection across sites while maintaining compliance with HIPAA and GDPR has been invaluable to our research program."',
+    author: 'Dr. Elizabeth Blackwell',
+    role: 'Head of Clinical Research, Mayo Clinic',
     logo: review3,
   },
   {
-    text: '“Nice, a serious contender to LMSYS in evaluating LLMs has entered the chat: SEAL Leaderboards. LLM evals are improving, but not so long ago their state was very bleak, with qualitative experience very often disagreeing with quantitative rankings. Good evals are very difficult to build...They have to be comprehensive, representative, of high quality, and measure gradient signal, and there are a lot of details to think through and get right before your qualitative and quantitative assessments line up. ...Good evals are unintuitively difficult, highly work-intensive, but quite important, so I\'m happy to see more organizations join the effort to do it well.”',
-    author: 'Andrej Karpathy',
-    role: 'Founder, EurekaLabsAI',
+    text: '"As a healthcare startup, navigating the complex regulatory landscape was our biggest challenge. Bralvio\'s comprehensive support throughout the 510(k) clearance process was exceptional. Their team\'s expertise in both technical development and regulatory strategy gave us confidence during a critical phase of our company\'s growth."',
+    author: 'Dr. James Wilson',
+    role: 'Founder & CEO, NeuraTech Medical',
     logo: review4,
   },
   {
-    text: '“We\'re going to need a lot more investment in high-quality evals and benchmarks to help us understand the actual comparative utility of the various models. This new set of private evals and leaderboards from Bralvio are great to see”',
-    author: 'Nat Friedman',
-    role: 'Entrepreneur and Investor, and Former CEO of GitHub',
+    text: '"The integration of Bralvio\'s remote monitoring platform with our existing hospital systems exceeded our expectations. Patient satisfaction scores have increased by 27%, and our clinical staff reports significant improvements in workflow efficiency. Their understanding of both clinical needs and technical implementation is truly unique in the healthcare technology space."',
+    author: 'Dr. Maria Rodriguez',
+    role: 'Chief Medical Information Officer, Cleveland Clinic',
     logo: review5,
   },
 ];

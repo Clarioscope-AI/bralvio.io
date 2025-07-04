@@ -1,21 +1,19 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { TextCubeProps } from "@/types/TextCubeProps.type";
 
 export default function TextCube({ data, gradients }: TextCubeProps) {
   const [rotation, setRotation] = useState(0);
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setRotation((prev) => prev + 120);
     }, 2000);
-
     return () => clearInterval(interval);
   }, []);
-
+  
   return (
-    <span className="inline-block w-full lg:w-[405px] lg:h-[80px] h-[40px] perspective align-middle my-3">
+    <span className="inline-block w-[150px] lg:w-[250px] lg:h-[80px] h-[40px] perspective align-middle mx-2">
       <div
         className="relative w-full h-full"
         style={{

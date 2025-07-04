@@ -2,7 +2,7 @@ import { HeroDataType } from "@/types/hero.types";
 
 export const heroData: HeroDataType = {
   title: "Power With Your Data",
-  keywords: ["Regulatory AI", "Engineering AI", "Production AI"] ,
+  keywords: ["MedTech", "Health AI", "BioTech",] ,
   description:
-    "Make the best models with the best data. Bralvio Data Engine powers nearly every major foundation model, and with Bralvio GenAI Platform, leverages your enterprise data to unlock the value of AI.",
+    "Turn breakthrough ideas into market-ready medtech. Bralvio’s AI and engineering platforms streamline the journey from prototype to product, transforming clinical innovation into real-world impact.",
 };

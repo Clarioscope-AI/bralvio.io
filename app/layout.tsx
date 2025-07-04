@@ -21,8 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${urbanist.variable} antialiased`}>
-      <body className="container mx-auto">
-        {children}
+      <body>
+        <div className="container mx-auto">
+          {children}
+        </div>
       </body>
     </html>
   );

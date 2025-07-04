@@ -8,73 +8,61 @@ import case7 from "@/assets/case-studies/slide-7.webp";
 import case8 from "@/assets/case-studies/slide-8.webp";
 import case10 from "@/assets/case-studies/slide-10.webp";
 
-
 export interface CaseStudySlideData {
   title: string;
   subtitle: string;
   image: StaticImageData | string;
- 
 }
 
 export const caseStudiesSlides: CaseStudySlideData[] = [
   {
     title: "Partner",
-    subtitle: "OpenAI Names Bralvio as Preferred Fine-Tuning Partner",
+    subtitle: "Mayo Clinic Names Bralvio as Preferred Medical Device Development Partner",
     image: case1,
-   
   },
   {
     title: "Partner",
-    subtitle: "Anthropic Partners with Bralvio to Bring Generative AI to Enterprises",
+    subtitle: "Medtronic Partners with Bralvio to Advance Remote Patient Monitoring Solutions",
     image: case2,
-    
   },
   {
     title: "Partner",
-    subtitle: "Meta and Bralvio Partner to Drive Enterprise Adoption of Llama",
+    subtitle: "Cleveland Clinic and Bralvio Collaborate on Next-Generation Surgical Tools",
     image: case3,
-    
   },
   {
     title: "Case Studies",
-    subtitle: "Customer Case Study: Cohere",
+    subtitle: "Customer Case Study: Boston Scientific's Regulatory Compliance Journey",
     image: case4,
-    
   },
   {
     title: "Blog",
-    subtitle: "Bralvio's SEAL Research Lab Launches Expert-Evaluated LLM Leaderboards",
+    subtitle: "Bralvio's Medical Research Lab Launches Clinical Validation Framework",
     image: case5,
-    
   },
   {
     title: "Blog",
-    subtitle: "Why Is ChatGPT So Good?",
+    subtitle: "The Future of Wearable Medical Devices: Trends and Innovations",
     image: case10,
-    
   },
   {
     title: "Dataset",
-    subtitle: "Open Dataset: Ukraine Damage Identification",
+    subtitle: "Open Dataset: Standardized Cardiac Monitoring Signals",
     image: case7,
-    
   },
   {
     title: "Blog",
-    subtitle: "Meet Claude: Anthropic’s rival to ChatGPT",
+    subtitle: "Navigating FDA's Software as a Medical Device (SaMD) Requirements",
     image: case8,
-    
   },
   {
     title: "Blog",
-    subtitle: "How Much Better Is OpenAI's Newest GPT-3 Model?",
+    subtitle: "How Much Better Are Next-Generation Implantable Medical Devices?",
     image: case10,
-    
   },
   {
     title: "Blog",
-    subtitle: "How OpenAI worked with Bralvio to build InstructGPT",
+    subtitle: "How Philips Healthcare Worked with Bralvio to Enhance Patient Monitoring",
     image: case10,
-    
   },
 ];

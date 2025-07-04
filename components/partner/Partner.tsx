@@ -8,9 +8,9 @@ const Partner: FC = (): JSX.Element => {
     <div className="my-28 lg:my-42">
       {/* for desktop */}
       <p className="max-w-max mb-10 md:mb-12 text-center mx-auto uppercase leading-[1.70] text-xs px-3 sm:px-0 md:text-sm tracking-[4px] text-secondary">
-        GENERATIVE AI PROVIDERS WE PARTNER&nbsp;WITH:
+        HEALTHCARE TECHNOLOGY PARTNERS WE WORK&nbsp;WITH:
       </p>
-      <div className="hidden lg:flex justify-between items-center px-28  md:gap-4">
+      <div className="hidden lg:flex justify-between items-center px-28 md:gap-4">
         {partners.map((partner, index) => (
           <div
             key={index}
@@ -19,7 +19,9 @@ const Partner: FC = (): JSX.Element => {
             <Image
               src={partner}
               alt={`partner-${index}`}
-              className="h-7 w-24"
+              width={96}
+              height={28}
+              style={{ objectFit: "contain" }}
             />
           </div>
         ))}
@@ -36,11 +38,13 @@ const Partner: FC = (): JSX.Element => {
                 <Image
                   src={partner}
                   alt={`partner-${index}`}
-                  className="h-7 w-24 object-contain"
+                  width={96}
+                  height={28}
+                  style={{ objectFit: "contain" }}
                 />
               </div>
             ))}
-            {/* add extra div for adjust spaceing */}
+            {/* add extra div for adjust spacing */}
             <span className="w-2"></span>
           </div>
         </Marquee>

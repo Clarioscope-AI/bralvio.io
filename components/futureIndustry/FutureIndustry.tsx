@@ -23,19 +23,19 @@ const FutureIndustry: FC = () => {
         />
       </div>
       <h3 className="lg:w-1/2 mx-auto font-normal text-3xl md:text-3xl lg:text-[80px] mb-6">
-        The future of your industry{" "}
+        The future of healthcare{" "}
         <span className="bg-gradient-to-r from-[#714DFF] via-[#E151FF] to-[#FFF759] bg-clip-text text-transparent">
           starts here
         </span>
       </h3>
       <div className="flex md:justify-center md:flex-row gap-3 md:mt-7">
         <Button
-          label="Book a Demo"
+          label="Schedule a Consultation"
           arrow
-          classNames="text-center text-sm text-primary bg-secondary rounded-lg px-2 py-1  lg:px-4 lg:py-2 hover:bg-secondary/90 transition-colors duration-300 "
+          classNames="text-center text-sm text-primary bg-secondary rounded-lg px-2 py-1 lg:px-4 lg:py-2 hover:bg-secondary/90 transition-colors duration-300 "
         />
         <Button
-          label="Build AI"
+          label="Explore Solutions"
           arrow
           classNames="text-secondary text-sm flex justify-center rounded-lg px-4 py-2 hover:text-secondary/90 transition-colors duration-300 text-center "
         />

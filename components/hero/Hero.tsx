@@ -25,12 +25,12 @@ const Hero: React.FC = (): JSX.Element => {
       </div>
       <div className="relative z-10">
         <h1 className="lg:w-1/2 mx-auto font-normal text-3xl md:text-3xl lg:text-[70px] flex flex-wrap justify-center items-center gap-2">
-          Power 
+          Engineering
           <TextCube
             data={heroData?.keywords}
             gradients="linear-gradient(50deg, #714DFF, #9C83FF 31.28%, #E151FF 77.97%, #FFF759 95.64%)"
           />
-           With Your Data
+           Into Life
         </h1>
 
         <p className="text-[12px] lg:text-[16px] w-full md:w-2/3 lg:w-1/2 mx-auto my-6 ">
