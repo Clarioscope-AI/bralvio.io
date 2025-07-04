@@ -18,7 +18,7 @@ const DataCuration: FC = (): JSX.Element => {
             Extract valuable insights by intelligently organizing your clinical datasets.
           </p>
           <p className="text-[14px] lg:text-[16px] my-7">
-            Bralvio's suite of medical database management, clinical testing, and healthcare analytics tools 
+            Bralvio&apos;s suite of medical database management, clinical testing, and healthcare analytics tools 
             enables you to prioritize what matters most. Maximize the value of your clinical data by identifying 
             the most significant patterns and insights for improved patient outcomes and regulatory compliance.
           </p>

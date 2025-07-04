@@ -13,7 +13,7 @@ const CaseStudies: FC = (): JSX.Element => {
           Case Studies & Resources
         </h2>
         <p className="text-sm md:text-xl font-semibold text-gray-300 max-w-xl">
-          We've worked with leading healthcare organizations and medical device companies to deliver innovative solutions that improve patient outcomes.
+          We&apos;ve worked with leading healthcare organizations and medical device companies to deliver innovative solutions that improve patient outcomes.
         </p>
       </div>
       <div className="mt-12">

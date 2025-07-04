@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../ui/button/Button";
 import { LabelingCategory } from "@/types/dataLabelingTypes";
 import { labelingImages } from "@/data/dataLabeling";
+import Image from "next/image";
 
 const DesktopDataLabeling = () => {
   const [activeTab, setActiveTab] = useState<LabelingCategory>("3D");
@@ -58,10 +59,12 @@ const DesktopDataLabeling = () => {
         />
       </div>
       <div className="flex-1 relative">
-        <img
+        <Image
           src={labelingImages[activeTab]}
           alt={`${activeTab} labeled objects`}
-          className="w-full h-[350px] object-cover rounded-lg"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-lg"
         />
       </div>
     </div>

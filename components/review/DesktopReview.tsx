@@ -4,6 +4,7 @@ import { reviewData } from "@/data/reviewData";
 import { useState, useEffect } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import Image from "next/image";
 
 const AUTOPLAY_INTERVAL = 4000;
 
@@ -63,11 +64,12 @@ const DesktopReview = () => {
                         type="button"
                     >
                     
-                        <img
-                            src={typeof r.logo === 'string' ? r.logo : (r.logo as { src: string }).src}
+                        <Image
+                            src={typeof r.logo === "string" ? r.logo : (r.logo as { src: string }).src}
                             alt={r.author}
-                            className={`w-25 h-15 object-contain  filter invert ${selected === idx ? 'opacity-100' : 'opacity-65'}`}
-                            style={{ opacity: selected === idx ? 1 : 0.65 }}
+                            layout="fill"
+                            objectFit="contain"
+                            className={`filter invert ${selected === idx ? "opacity-100" : "opacity-65"}`}
                         />
                     </button>
                 ))}

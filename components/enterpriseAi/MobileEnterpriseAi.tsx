@@ -56,7 +56,7 @@ const MobileEnterpriseAi: React.FC = () => {
           Healthcare Technology Architecture
         </h1>
         <p className="text-[#FFFFFF] text-xs text-center">
-          Whether you're developing medical devices or implementing healthcare solutions, clinical data remains the key to improving patient outcomes.
+          Whether you&apos;re developing medical devices or implementing healthcare solutions, clinical data remains the key to improving patient outcomes.
         </p>
         <Button
           label="Schedule a Consultation"

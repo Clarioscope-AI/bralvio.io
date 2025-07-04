@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Button from '../ui/button/Button';
 import { LabelingCategory } from '@/types/dataLabelingTypes';
 import { labelingImages } from '@/data/dataLabeling';
+import Image from 'next/image';
 
 const MobileDataLabeling = () => {
   const [activeTab, setActiveTab] = useState<LabelingCategory>('3D');
@@ -36,11 +37,12 @@ const MobileDataLabeling = () => {
         </div>
       </div>
 
-      <img
-        src={labelingImages[activeTab]}
-        alt={`${activeTab} labeled objects`}
-        className="w-full h-56 object-cover rounded-lg mb-4"
-      />
+        <Image
+          src={labelingImages[activeTab]}
+          alt={`${activeTab} labeled objects`}
+          layout="fill"
+          objectFit="cover"
+        />
 
       <p className="text-gray-300 text-sm mb-8 leading-relaxed">
         Bralvio has pioneered in the data labeling industry by combining AI-based

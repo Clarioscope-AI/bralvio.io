@@ -21,7 +21,7 @@ const DesktopEnterpriseAi: React.FC = () => {
           Healthcare Technology Architecture
         </h1>
         <p className="text-[#FFFFFF] text-lg w-[600px] text-center">
-          Whether you're developing medical devices or integrating AI into healthcare solutions, 
+          Whether you&apos;re developing medical devices or integrating AI into healthcare solutions, 
           our expertise helps you navigate from concept to market-ready products.
         </p>
         <Button
