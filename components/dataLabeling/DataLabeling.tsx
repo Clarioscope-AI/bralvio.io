@@ -11,8 +11,10 @@ const DesktopDataLabeling = dynamic(() => import("./DesktopDataLabeling"), {
 
 const DataLabeling = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [mounted, setMounted] = useState(false); // 👈 Hydration-safe
 
   useEffect(() => {
+    setMounted(true);
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
@@ -20,6 +22,8 @@ const DataLabeling = () => {
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
+
+  if (!mounted) return null; // 👈 Prevent hydration errors
 
   return isMobile ? <MobileDataLabeling /> : <DesktopDataLabeling />;
 };

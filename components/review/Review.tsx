@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { FC, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
@@ -7,8 +7,10 @@ const DesktopReview = dynamic(() => import('./DesktopReview'), { ssr: false });
 
 const Review: FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [mounted, setMounted] = useState(false); // 👈 Hydration-safe
 
   useEffect(() => {
+    setMounted(true);
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
@@ -16,6 +18,8 @@ const Review: FC = () => {
     window.addEventListener('resize', checkScreenSize);
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
+
+  if (!mounted) return null; // 👈 Prevent SSR-client mismatch
 
   return isMobile ? <MobileReview /> : <DesktopReview />;
 };

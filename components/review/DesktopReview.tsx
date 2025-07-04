@@ -64,13 +64,16 @@ const DesktopReview = () => {
                         type="button"
                     >
                     
+                        <div className="relative w-24 h-10">
                         <Image
                             src={typeof r.logo === "string" ? r.logo : (r.logo as { src: string }).src}
                             alt={r.author}
-                            layout="fill"
-                            objectFit="contain"
+                            fill
+                            style={{ objectFit: "contain" }}
                             className={`filter invert ${selected === idx ? "opacity-100" : "opacity-65"}`}
                         />
+                        </div>
+
                     </button>
                 ))}
             </div>
