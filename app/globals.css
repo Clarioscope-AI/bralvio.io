@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
-@theme {
+@theme inline {
   --color-primary: oklch(0 0 0);
   --color-secondary: oklch(1 0 0);
   --color-tertiary: oklch(0.4669 0.1121 331.26);
+  --font-sans: var(--font-urbanist);
 }
+
 body {
   background-color: var(--color-primary);
+  font-family: var(--font-sans);
 }
 
 .perspective {

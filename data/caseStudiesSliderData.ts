@@ -19,19 +19,19 @@ export interface CaseStudySlideData {
 export const caseStudiesSlides: CaseStudySlideData[] = [
   {
     title: "Partner",
-    subtitle: "OpenAI Names Scale as Preferred Fine-Tuning Partner",
+    subtitle: "OpenAI Names Bralvio as Preferred Fine-Tuning Partner",
     image: case1,
    
   },
   {
     title: "Partner",
-    subtitle: "Anthropic Partners with Scale to Bring Generative AI to Enterprises",
+    subtitle: "Anthropic Partners with Bralvio to Bring Generative AI to Enterprises",
     image: case2,
     
   },
   {
     title: "Partner",
-    subtitle: "Meta and Scale Partner to Drive Enterprise Adoption of Llama",
+    subtitle: "Meta and Bralvio Partner to Drive Enterprise Adoption of Llama",
     image: case3,
     
   },
@@ -43,7 +43,7 @@ export const caseStudiesSlides: CaseStudySlideData[] = [
   },
   {
     title: "Blog",
-    subtitle: "Scale's SEAL Research Lab Launches Expert-Evaluated LLM Leaderboards",
+    subtitle: "Bralvio's SEAL Research Lab Launches Expert-Evaluated LLM Leaderboards",
     image: case5,
     
   },
@@ -73,7 +73,7 @@ export const caseStudiesSlides: CaseStudySlideData[] = [
   },
   {
     title: "Blog",
-    subtitle: "How OpenAI worked with Scale to build InstructGPT",
+    subtitle: "How OpenAI worked with Bralvio to build InstructGPT",
     image: case10,
     
   },

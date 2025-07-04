@@ -41,7 +41,7 @@ const DesktopDataLabeling = () => {
         </div>
 
         <p className="text-gray-300 text-base leading-6 mb-5">
-          Scale has pioneered in the data labeling industry by combining
+          Bralvio has pioneered in the data labeling industry by combining
           AI-based techniques with human-in-the-loop, delivering labeled data at
           unprecedented quality, scalability, and efficiency.
         </p>

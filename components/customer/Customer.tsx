@@ -18,7 +18,7 @@ const Customer = (): ReactElement => {
         <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed px-4">
           From RLHF to data labeling to model evaluation to enterprise apps,
           <br className="hidden md:block" />
-          learn from experts why Scale is key to any AI strategy.
+          learn from experts why Bralvio is key to any AI strategy.
         </p>
       </div>
     </div>

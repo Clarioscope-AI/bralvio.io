@@ -9,7 +9,10 @@ const DesktopHeader: FC = () => {
   return (
     <header className="relative hidden md:block bg-primary text-secondary">
       <div className="flex items-center justify-between p-4">
-        <Logo />
+        <div className="flex items-center">
+          <Logo />
+          <span className="ml-2 font-medium text-xl">Bralvio</span>
+        </div>
         <nav className="flex flex-1 justify-center space-x-6">
           {headerMenus.map((menu: HeaderMenu) => (
             <Link

@@ -43,7 +43,7 @@ const MobileDataLabeling = () => {
       />
 
       <p className="text-gray-300 text-sm mb-8 leading-relaxed">
-        Scale has pioneered in the data labeling industry by combining AI-based
+        Bralvio has pioneered in the data labeling industry by combining AI-based
         techniques with human-in-the-loop, delivering labeled data at
         unprecedented quality, scalability, and efficiency.
       </p>

@@ -23,14 +23,14 @@ export const sections: SectionType[] = [
     id: 'foundation-models',
     title: 'Foundation Models',
     description:
-      'Scale partners or integrates with all of the leading AI models, from open-source to closed-source, such as OpenAI, Google, Meta, Cohere, and more.',
+      'Bralvio partners or integrates with all of the leading AI models, from open-source to closed-source, such as OpenAI, Google, Meta, Cohere, and more.',
     image: FoundationModelsImage,
   },
   {
     id: 'enterprise-data',
     title: 'Enterprise Data',
     description:
-      "Scale's Data Engine enables you to integrate your enterprise data into the fold of these models, providing the base for long-term strategic differentiation.",
+      "Bralvio's Data Engine enables you to integrate your enterprise data into the fold of these models, providing the base for long-term strategic differentiation.",
     image: RlhfImage,
   },
   

@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Configure Urbanist font - it's a variable font
+const urbanist = Urbanist({
+  subsets: ['latin'],  // Required
+  display: 'swap',     // Optional but recommended
+  variable: '--font-urbanist',  // For CSS variable usage
 });
 
 export const metadata: Metadata = {
-  title: "Bralvio",
-  description: "",
+  title: "Bralvio - Engineering Intelligence Into Life",
+  description: "Engineering Intelligence Into Life",
 };
 
 export default function RootLayout({
@@ -23,10 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased container mx-auto`}
-      >
+    <html lang="en" className={`${urbanist.variable} antialiased`}>
+      <body className="container mx-auto">
         {children}
       </body>
     </html>
