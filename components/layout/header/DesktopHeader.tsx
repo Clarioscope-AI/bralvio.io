@@ -10,8 +10,10 @@ const DesktopHeader: FC = () => {
     <header className="relative hidden md:block bg-primary text-secondary">
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center">
-          <Logo />
-          <span className="ml-2 font-medium text-xl">Bralvio</span>
+          <Link href="/" className="flex items-center">
+            <Logo />
+            <span className="ml-2 font-medium text-xl">Bralvio</span>
+          </Link>
         </div>
         <nav className="flex flex-1 justify-center space-x-6">
           {headerMenus.map((menu: HeaderMenu) => (
@@ -25,11 +27,14 @@ const DesktopHeader: FC = () => {
           ))}
         </nav>
         <div className="flex gap-4">
-          <Button
-            label="Book a Demo"
-            arrow
-            classNames="text-primary bg-secondary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300"
-          />
+          <Link href="/book-a-demo">
+            <Button
+              label="Book a Demo"
+              arrow
+              classNames="text-primary bg-secondary rounded-lg px-4 py-2 hover:bg-secondary/90 transition-colors duration-300"
+            />
+          </Link>
+
           <Button
             label="Log In"
             arrow={false}

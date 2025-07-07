@@ -1,7 +1,7 @@
 import { HeaderMenu } from "@/types/HeaderMenu.types";
 
 export const headerMenus: HeaderMenu[] = [
-  { label: "About Us", destination: "/about-us" },
+  { label: "About Us", destination: "/about" },
   { label: "Services", destination: "/services" },
   { label: "Solutions", destination: "/solutions" },
   { label: "Funding Help", destination: "/funding-help" },

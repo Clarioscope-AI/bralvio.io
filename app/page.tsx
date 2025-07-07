@@ -32,7 +32,6 @@ export default function Home() {
       <CaseStudies></CaseStudies>
       <Secure></Secure>
       <FutureIndustry></FutureIndustry>
-
       <Footer></Footer>
     </>
   );
