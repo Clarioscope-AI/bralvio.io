@@ -2,10 +2,16 @@
 
 import Header from "@/components/layout/header/header";
 import Footer from "@/components/footer/Footer";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import officeImage from "@/assets/about/office.png";
 import { partners } from "@/data/partnerData";
 import Button from "@/components/ui/button/Button";
+
+// ✅ Define the partner type
+type Partner = {
+  image: StaticImageData;
+  name: string;
+};
 
 export default function AboutPage() {
   return (
@@ -73,33 +79,24 @@ export default function AboutPage() {
         <section className="py-20 px-6 md:px-16">
           <h2 className="text-3xl font-semibold text-center mb-12">Our Trusted Partners</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-center">
-            {partners.map((partner: { image?: any; name?: string } | any, i: number) => {
-              const imageSrc =
-                typeof partner === "object" && "src" in partner
-                  ? partner
-                  : partner?.image || partner;
-              const altText =
-                partner?.name || "Partner logo";
-              return (
-                <div
-                  key={i}
-                  className="flex items-center justify-center bg-white/5 p-4 rounded-xl border border-white/10 h-24"
-                >
-                  <Image
-                    src={imageSrc}
-                    alt={altText}
-                    className="object-contain"
-                    width={160}
-                    height={48}
-                  />
-                </div>
-              );
-            })}
+            {partners.map((partner: Partner, i: number) => (
+              <div
+                key={i}
+                className="flex items-center justify-center bg-white/5 p-4 rounded-xl border border-white/10 h-24"
+              >
+                <Image
+                  src={partner.image}
+                  alt={partner.name}
+                  className="object-contain"
+                  width={160}
+                  height={48}
+                />
+              </div>
+            ))}
           </div>
         </section>
 
-
-        {/* CTA Section with Custom Buttons */}
+        {/* CTA Section */}
         <section className="py-24 px-6 md:px-16 text-center bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-600 rounded-2xl mx-4 md:mx-16 text-white space-y-6">
           <h2 className="text-4xl font-bold">The future of healthtech starts with Bralvio</h2>
           <p className="text-lg text-white/90 font-light">

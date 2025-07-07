@@ -17,8 +17,8 @@ const Partner: FC = (): JSX.Element => {
             className="flex justify-center items-center p-8 border-1 border-gray-700 rounded-xl w-[230px] h-[112px]"
           >
             <Image
-              src={partner}
-              alt={`partner-${index}`}
+              src={partner.image}
+              alt={partner.name}
               width={96}
               height={28}
               style={{ objectFit: "contain" }}
@@ -26,6 +26,7 @@ const Partner: FC = (): JSX.Element => {
           </div>
         ))}
       </div>
+
       {/* for mobile */}
       <div className="lg:hidden w-full overflow-hidden">
         <Marquee className="flex items-center">
@@ -36,16 +37,15 @@ const Partner: FC = (): JSX.Element => {
                 className="flex justify-center items-center border border-gray-700 rounded-xl w-[230px] h-[112px]"
               >
                 <Image
-                  src={partner}
-                  alt={`partner-${index}`}
+                  src={partner.image}
+                  alt={partner.name}
                   width={96}
                   height={28}
                   style={{ objectFit: "contain" }}
                 />
               </div>
             ))}
-            {/* add extra div for adjust spacing */}
-            <span className="w-2"></span>
+            <span className="w-2" />
           </div>
         </Marquee>
       </div>

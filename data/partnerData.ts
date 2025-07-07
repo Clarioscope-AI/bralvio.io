@@ -1,8 +1,15 @@
-import img from "@/assets/partner/openai.webp";
-import img2 from "@/assets/partner/adept.webp";
-import img3 from "@/assets/partner/meta.webp";
-import img4 from "@/assets/partner/cohere.webp";
-import img5 from "@/assets/partner/anthropic.webp";
 import { StaticImageData } from "next/image";
+import openai from "@/assets/partner/openai.webp";
+import adept from "@/assets/partner/adept.webp";
+import meta from "@/assets/partner/meta.webp";
+import cohere from "@/assets/partner/cohere.webp";
+import anthropic from "@/assets/partner/anthropic.webp";
 
-export const partners: StaticImageData[] = [img, img2, img3, img4, img5];
+// Strongly-typed partner data
+export const partners: { image: StaticImageData; name: string }[] = [
+  { image: openai, name: "OpenAI" },
+  { image: adept, name: "Adept" },
+  { image: meta, name: "Meta AI" },
+  { image: cohere, name: "Cohere" },
+  { image: anthropic, name: "Anthropic" },
+];
