@@ -256,7 +256,7 @@ export default function FundingHelpPage() {
                 Ready to Secure <span className="text-[#B277AB]">Funding</span> for Your HealthTech?
               </h2>
               <p className="text-xl text-white/90 font-light mb-12 max-w-2xl mx-auto">
-                Join the 24+ startups that have successfully raised capital with Bralvio's expert guidance
+                Join the 24+ startups that have successfully raised capital with Bralvio&apos;s expert guidance
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <Button

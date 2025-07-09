@@ -180,7 +180,7 @@ export default function SolutionsPage() {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed mb-12">
-              Explore Bralvio's pre-built and customizable technology platforms designed to solve modern clinical and operational challenges
+              Explore Bralvio&apos;s pre-built and customizable technology platforms designed to solve modern clinical and operational challenges
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

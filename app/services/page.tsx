@@ -168,7 +168,6 @@ const certifications = [
 
 export default function ServicesPage() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeService, setActiveService] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
@@ -395,7 +394,7 @@ export default function ServicesPage() {
                 Ready to Transform Your <span className="text-[#B277AB]">Healthcare</span> Innovation?
               </h2>
               <p className="text-xl text-white/90 font-light mb-12 max-w-2xl mx-auto">
-                Let's discuss how our comprehensive services can bring your healthcare technology vision to life
+                Let&apos;s discuss how our comprehensive services can bring your healthcare technology vision to life
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <Button
