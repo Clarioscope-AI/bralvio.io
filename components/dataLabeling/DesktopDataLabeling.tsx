@@ -59,13 +59,14 @@ const DesktopDataLabeling = () => {
         />
       </div>
       <div className="flex-1 relative">
-        <Image
-          src={labelingImages[activeTab]}
-          alt={`${activeTab} labeled objects`}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
-        />
+      <Image
+        src={labelingImages[activeTab]}
+        height={300}
+        width={550}
+        alt={`${activeTab} labeled objects`}
+        style={{ objectFit: "cover", borderRadius: "0.5rem" }}
+      />
+
       </div>
     </div>
   );

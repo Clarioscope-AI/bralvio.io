@@ -37,12 +37,14 @@ const MobileDataLabeling = () => {
         </div>
       </div>
 
-        <Image
-          src={labelingImages[activeTab]}
-          alt={`${activeTab} labeled objects`}
-          layout="fill"
-          objectFit="cover"
-        />
+      <Image
+        src={labelingImages[activeTab]}
+        alt={`${activeTab} labeled objects`}
+        width={500}
+        height={300}
+        className="rounded-lg w-full h-auto mx-auto mb-4"
+      />
+
 
       <p className="text-gray-300 text-sm mb-8 leading-relaxed">
         Bralvio has pioneered in the data labeling industry by combining AI-based
